@@ -51,7 +51,7 @@ const MainLayout = () => {
             />
 
             {
-                // selectedOption === 'menu' && <Charts/>
+                // selectedOption === 'menu' && <AllDronesCharts chartData={userData}/>
             }
 
             {
@@ -61,12 +61,32 @@ const MainLayout = () => {
             {
                 selectedOption === 'history' && <History/>
             }
-
-            {
-                selectedOption !== 'menu' && <AppMapBox/>
-            }
+            <AppMapBox/>
             {/*<DetailedDroneInfo/>*/}
         </div>
+        // <div className={styles.mainLayout}>
+        //     <MiniSidebar
+        //         selectedOption={selectedOption}
+        //         setSelectedOption={setSelectedOption}
+        //     />
+        //
+        //     {
+        //         // selectedOption === 'menu' && <Charts/>
+        //     }
+        //
+        //     {
+        //         selectedOption === 'drone' && <SidebarDrones/>
+        //     }
+        //
+        //     {
+        //         selectedOption === 'history' && <History/>
+        //     }
+        //
+        //     {
+        //         selectedOption !== 'menu' && <AppMapBox/>
+        //     }
+        //     {/*<DetailedDroneInfo/>*/}
+        // </div>
     );
 };
 
